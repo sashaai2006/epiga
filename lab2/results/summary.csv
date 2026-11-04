@@ -1,0 +1,5 @@
+method,best,mean,median,std,worst,feasible_rate,mean_evals,mean_seconds
+GA_repair_reassign,7.0,7.0,7.0,0.0,7.0,1.0,6000.0,1.4409554727550131
+GA_penalty_reassign,15.0,19.6,19.0,3.1187041843486347,28.0,1.0,6000.0,0.2253243709448725
+GA_repair_bit_flip,7.0,7.0,7.0,0.0,7.0,1.0,6000.0,1.4391323083662428
+Random_feasible,7.0,7.35,7.0,0.4893604849295929,8.0,1.0,6000.0,1.4359243979095482

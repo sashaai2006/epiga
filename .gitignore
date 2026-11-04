@@ -1,0 +1,25 @@
+# Python virtual environment
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: local experiment outputs can be regenerated from notebooks
+# Uncomment the next lines if you prefer not to version-control generated artifacts:
+# lab1/results/
+# lab1/plots/
+# lab2/results/
+# lab2/plots/

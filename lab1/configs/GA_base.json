@@ -1,0 +1,19 @@
+{
+  "dim": 9,
+  "population_size": 100,
+  "budget": 10000,
+  "tournament_size": 3,
+  "selection": "tournament",
+  "crossover": "sbx",
+  "crossover_prob": 0.9,
+  "mutation_prob": 0.1,
+  "mutation_sigma": 0.1,
+  "adaptive_sigma": true,
+  "adaptive_sigma_factor": 1.01,
+  "blx_alpha": 0.5,
+  "sbx_eta": 15.0,
+  "elitism": 1,
+  "seed": 1000,
+  "lower": 0.0,
+  "upper": 3.141592653589793
+}

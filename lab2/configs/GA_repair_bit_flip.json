@@ -1,0 +1,12 @@
+{
+  "population_size": 60,
+  "budget": 6000,
+  "tournament_size": 3,
+  "crossover_prob": 0.9,
+  "mutation_prob": 0.15,
+  "mutation": "bit_flip",
+  "constraint_handler": "repair",
+  "penalty_weight": 1000.0,
+  "elitism": 2,
+  "seed": 1000
+}

@@ -1,0 +1,42 @@
+{
+  "GA_repair_reassign": {
+    "best": 7.0,
+    "mean": 7.0,
+    "median": 7.0,
+    "std": 0.0,
+    "worst": 7.0,
+    "feasible_rate": 1.0,
+    "mean_evals": 6000.0,
+    "mean_seconds": 1.4409554727550131
+  },
+  "GA_penalty_reassign": {
+    "best": 15.0,
+    "mean": 19.6,
+    "median": 19.0,
+    "std": 3.1187041843486347,
+    "worst": 28.0,
+    "feasible_rate": 1.0,
+    "mean_evals": 6000.0,
+    "mean_seconds": 0.2253243709448725
+  },
+  "GA_repair_bit_flip": {
+    "best": 7.0,
+    "mean": 7.0,
+    "median": 7.0,
+    "std": 0.0,
+    "worst": 7.0,
+    "feasible_rate": 1.0,
+    "mean_evals": 6000.0,
+    "mean_seconds": 1.4391323083662428
+  },
+  "Random_feasible": {
+    "best": 7.0,
+    "mean": 7.35,
+    "median": 7.0,
+    "std": 0.4893604849295929,
+    "worst": 8.0,
+    "feasible_rate": 1.0,
+    "mean_evals": 6000.0,
+    "mean_seconds": 1.4359243979095482
+  }
+}
