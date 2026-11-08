@@ -1,0 +1,57 @@
+[
+  {
+    "method": "NSGAII_base",
+    "best": 86403186.84583333,
+    "mean": 86040162.05983333,
+    "median": 86205059.60729167,
+    "std": 340025.2093362275,
+    "worst": 85552291.92708334,
+    "mean_front_size": 88.35,
+    "mean_run_seconds": 5.28495,
+    "mean_eval_ms": 5.954
+  },
+  {
+    "method": "NSGAII_small_pop",
+    "best": 86520436.30416667,
+    "mean": 85721655.65610418,
+    "median": 85756294.09270835,
+    "std": 650581.9824420057,
+    "worst": 84345306.54791668,
+    "mean_front_size": 118.5,
+    "mean_run_seconds": 4.433649999999999,
+    "mean_eval_ms": 4.9544999999999995
+  },
+  {
+    "method": "NSGAII_high_mutation",
+    "best": 86404114.125,
+    "mean": 86144464.35208334,
+    "median": 86328642.86166668,
+    "std": 367949.5995796388,
+    "worst": 85102134.46875,
+    "mean_front_size": 111.7,
+    "mean_run_seconds": 5.2963499999999994,
+    "mean_eval_ms": 5.5365
+  },
+  {
+    "method": "WeightedSum",
+    "best": 87224495.33999999,
+    "mean": 82910054.22575,
+    "median": 85956972.40041667,
+    "std": 9295250.594062757,
+    "worst": 55192977.60000001,
+    "mean_front_size": 26.4,
+    "mean_run_seconds": 7.418700000000001,
+    "mean_eval_ms": 8.497
+  },
+  {
+    "method": "RandomSearch",
+    "best": 88128720.87874998,
+    "mean": 85778491.03770836,
+    "median": 85458575.73958336,
+    "std": 934734.0271623273,
+    "worst": 84627230.02666667,
+    "mean_front_size": 13.85,
+    "mean_run_seconds": 17.950249999999997,
+    "mean_eval_ms": 17.7315
+  }
+]
