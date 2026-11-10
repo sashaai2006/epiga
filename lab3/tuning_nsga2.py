@@ -192,18 +192,20 @@ def crowding_distance(front_objectives: np.ndarray) -> np.ndarray:
 
 
 def hypervolume_2d(points: np.ndarray, ref: tuple[float, float]) -> float:
+    points = points[(points[:, 0] <= ref[0]) & (points[:, 1] <= ref[1])]
     if len(points) == 0:
         return 0.0
     order = np.argsort(points[:, 0])
     x = points[order, 0]
     y = np.minimum.accumulate(points[order, 1])
-    right = np.append(x[1:], ref[0])
+    right = np.minimum(np.append(x[1:], ref[0]), ref[0])
     widths = np.maximum(right - x, 0.0)
     heights = np.maximum(ref[1] - y, 0.0)
     return float(np.sum(widths * heights))
 
 
 def hypervolume_3d(points: np.ndarray, ref: tuple[float, float, float]) -> float:
+    points = points[np.all(points <= np.array(ref), axis=1)]
     if len(points) == 0:
         return 0.0
     order = np.argsort(points[:, 2])
@@ -211,7 +213,7 @@ def hypervolume_3d(points: np.ndarray, ref: tuple[float, float, float]) -> float
     volume = 0.0
     running = []
     for i in range(len(z)):
-        upper = z[i + 1] if i + 1 < len(z) else ref[2]
+        upper = min(z[i + 1], ref[2]) if i + 1 < len(z) else ref[2]
         running.append(points[order[i]])
         volume += (upper - z[i]) * hypervolume_2d(np.array(running), (ref[0], ref[1]))
     return float(volume)
@@ -221,7 +223,7 @@ def reference_point(data: ClassificationData) -> tuple[float, float, float]:
     max_params = n_params(int(UPPER[0]), data.n_features, data.n_classes)
     max_batches = ceil(len(data.x_train) / 2 ** int(LOWER[4]))
     max_cost = UPPER[2] * max_batches * max_params
-    return 0.5, 1.1 * max_cost, 1.1 * max_params
+    return 1.01, 1.1 * max_cost, 1.1 * max_params
 
 
 def sbx_crossover(parent1: np.ndarray, parent2: np.ndarray, rng: np.random.Generator,
